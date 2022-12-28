@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_header"
+    android:backgroundTint="@color/main"
+    android:padding="20dp"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgDut"
+        android:layout_width="@dimen/edge_logo"
+        android:layout_height="@dimen/edge_logo"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_dut" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/edge_logo"
+        android:layout_height="@dimen/edge_logo"
+        android:layout_marginLeft="20dp"
+        app:shapeAppearanceOverlay="@style/circle"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ete" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:gravity="center"
+        android:text="TRƯỜNG ĐẠI HỌC BÁCH KHOA - ĐẠI HỌC ĐÀ NẴNG"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgDut" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="KHOA ĐIỆN TỬ - VIỄN THÔNG"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvSchool" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="ĐỒ ÁN TỐT NGHIỆP"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvMajor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ỨNG DỤNG SỬA LỖI CHÍNH TẢ TIẾNG VIỆT DỰA TRÊN MÔ HÌNH HỌC MÁY"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
